@@ -47,11 +47,11 @@ At the end an example commit to properly implement it in your device tree could 
 
 [**2**] https://github.com/Spanish-or-Vanish/android_device_xiaomi_sm8350-common/commit/acbc197257083339b9d1b738c5b613f4a0feec7f
 
-[**3**] https://github.com/Spanish-or-Vanish/android_device_xiaomi_sm8350-common/commit/0182c5b44f0984845b8fb71a6006ecd4abffc9d3
+[**3**] https://github.com/Spanish-or-Vanish/android_device_xiaomi_sm8350-common/commit/e64cfcc3382ac6915d7d513ef7a69a64eb00659c
 
-[**4**] https://github.com/Spanish-or-Vanish/android_device_xiaomi_sm8350-common/commit/e64cfcc3382ac6915d7d513ef7a69a64eb00659c
+[**4**] https://github.com/Spanish-or-Vanish/android_device_xiaomi_sm8350-common/commit/463cd46921e1451c9b8315334f8cf01998469b6d
 
-[**5**] https://github.com/Spanish-or-Vanish/android_device_xiaomi_sm8350-common/commit/463cd46921e1451c9b8315334f8cf01998469b6d
+[**5**] https://github.com/Spanish-or-Vanish/android_device_xiaomi_sm8350-common/commit/17b01ad83900942eb78d51975cf8640676953b0e
 
 # Credits:
  * [**HELLBOY017**](https://github.com/HELLBOY017)
