@@ -102,12 +102,14 @@ PRODUCT_PACKAGES += \
     libdlbdsservice \
     vendor.dolby.hardware.dms@2.0-impl \
     vendor.dolby.hardware.dms@2.0-service \
+    libdlbpreg \
 
 # Dolby SoundFX
 PRODUCT_PACKAGES += \
     libhwdap \
     libswgamedap \
     libswvqe \
+    libdlbvol \
 
 # Dolby MediaCodecs
 PRODUCT_PACKAGES += \
