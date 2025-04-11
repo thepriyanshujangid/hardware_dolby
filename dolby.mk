@@ -99,17 +99,19 @@ PRODUCT_PACKAGES += \
     libdapparamstorage \
     libdeccfg \
     vendor.dolby.hardware.dms@2.0 \
+    libdlbdsservice \
     vendor.dolby.hardware.dms@2.0-impl \
     vendor.dolby.hardware.dms@2.0-service \
+
+# Dolby SoundFX
+PRODUCT_PACKAGES += \
     libhwdap \
     libswgamedap \
     libswvqe \
+
+# Dolby MediaCodecs
+PRODUCT_PACKAGES += \
     libstagefright_soft_ac4dec \
     libstagefright_soft_ddpdec \
     libstagefrightdolby \
-    libdlbdsservice \
 
-# Not Xiaomi Proprietary Blobs
-PRODUCT_PACKAGES += \
-    libdlbpreg \
-    libdlbvol \
