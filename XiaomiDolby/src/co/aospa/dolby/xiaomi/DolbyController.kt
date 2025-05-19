@@ -174,11 +174,40 @@ internal class DolbyController private constructor(
         profile = prefs.getString(DolbyConstants.PREF_PROFILE, "0" /*dynamic*/)!!.toInt()
     }
 
+    fun setCurrentProfileAndPersist(profile: Int, dsOn: Boolean) {
+        dlog(TAG, "setCurrentProfile(profile=$profile)")
+        if (getProfiles().contains(profile).not()) {
+            Log.w(TAG, "Invalid profile: $profile")
+            return
+        }
+
+        if (this.dsOn == dsOn) {
+            PreferenceManager.getDefaultSharedPreferences(context).edit()
+                .putString(DolbyConstants.PREF_PROFILE, profile.toString())
+                .apply()
+
+            this.profile = profile
+        } else {
+            PreferenceManager.getDefaultSharedPreferences(context).edit()
+                .putBoolean(DolbyConstants.PREF_ENABLE, dsOn)
+                .putString(DolbyConstants.PREF_PROFILE, profile.toString())
+                .commit()
+
+            this.dsOn = dsOn
+        }
+    }
+
     fun setDsOnAndPersist(dsOn: Boolean) {
         this.dsOn = dsOn
         PreferenceManager.getDefaultSharedPreferences(context).edit()
             .putBoolean(DolbyConstants.PREF_ENABLE, dsOn)
             .apply()
+    }
+
+    fun getProfiles(): IntArray {
+        return context.resources.getStringArray(R.array.dolby_profile_values)
+                                .map { it.toInt() }
+                                .toIntArray()
     }
 
     fun getProfileName(): String? {
