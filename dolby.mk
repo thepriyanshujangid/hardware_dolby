@@ -193,3 +193,5 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl_shim.vendor
 endif
 
+PRODUCT_PACKAGES += \
+	DolbyAtmos
