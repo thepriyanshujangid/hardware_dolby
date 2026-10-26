@@ -198,3 +198,6 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl_shim.vendor
 endif
 
+# Dolby interface
+PRODUCT_PACKAGES += \
+    LunarisDolby
